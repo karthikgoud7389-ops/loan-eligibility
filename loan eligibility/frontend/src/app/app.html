@@ -1,0 +1,33 @@
+
+<div class="container">
+  <h1>Loan Eligibility Checker</h1>
+  <p>Check your loan eligibility in seconds</p>
+
+  <form (ngSubmit)="apply()">
+    <input name="name" [(ngModel)]="name"
+      placeholder="Full Name" required>
+
+    <input name="age" [(ngModel)]="age"
+      type="number" placeholder="Age" min="18" required>
+
+    <input name="income" [(ngModel)]="income"
+      type="number" placeholder="Monthly Income (₹)"
+      min="1" required>
+
+    <input name="amount" [(ngModel)]="amount"
+      type="number" placeholder="Loan Amount (₹)"
+      min="1" required>
+
+    <button type="submit">Check Eligibility</button>
+  </form>
+
+  <h3>{{ result }}</h3>
+
+  <button type="button" (click)="viewLoans()">
+    View Applications
+  </button>
+
+  <div *ngFor="let loan of loans">
+    <p>{{ loan.name }} - ₹{{ loan.amount }} - {{ loan.status }}</p>
+  </div>
+</div>

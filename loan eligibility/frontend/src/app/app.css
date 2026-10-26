@@ -1,0 +1,35 @@
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #ccc;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 { color: #2457c5; }
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #2457c5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+h3 { color: green; }
